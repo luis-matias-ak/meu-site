@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato - Meu Site Luís</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilo geral do formulário */
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    button {
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003080;
+    }
+
+    /* Botão do WhatsApp */
+    .whatsapp-btn {
+      display: block;
+      width: 220px;
+      margin: 30px auto 50px;
+      text-align: center;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+
+    /* Centraliza texto do main */
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Fale comigo</h2>
+    <p>Se preferir, envie uma mensagem pelo formulário abaixo:</p>
+
+    <form action="https://formsubmit.co/luyismatias2003@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="message" placeholder="Sua mensagem" required rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/258849119899" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+      Falar no WhatsApp
+    </a>
+  </main>
+  <footer>
+    <p>&copy; 2025 Luís Matias</p>
+  </footer>
+</body>
+</html>
